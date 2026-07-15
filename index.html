@@ -1,35 +1,263 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oleg Fostii — Web Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
-    <!-- <form id="myForm" action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="main">Subject:</label>
-        <select id="main" name="subject" required>
-            <option value="general">General Inquiry</option>
-            <option value="support">Support</option>
-            <option value="feedback">Feedback</option>
-        </select><br><br>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required rows="5"></textarea><br><br>
-
-        <input type="submit" value="Send">
-
-    </form> -->
-
-
-
+ 
+  <!-- ================================
+       NAVIGATION
+  ================================ -->
+  <header>
+    <nav class="nav">
+        <div class="nav__logo">OF.</div>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#about">Über mich</a></li>
+                <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
+                <li class="nav__item"><a class="nav__link" href="#projects">Projekte</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Kontakt</a></li>
+            </ul>
+    </nav>
+  </header>
+ 
+  <main>
+ 
+    <!-- ================================
+         HERO
+    ================================ -->
+    <section class="hero" id="hero">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Hallo, ich bin</span>
+        <h1 class="hero__title">Oleg Fostii</h1>
+        <p class="hero__subtitle">
+          Web Developer in Weiterbildung —<br />
+          ich baue saubere, zugängliche Websites.
+        </p>
+        <a class="btn btn--primary" href="https://fostij.github.io/Portfolio.github.io/">Projekte ansehen</a>
+      </div>
+      <div class="hero__accent" aria-hidden="true"></div>
+    </section>
+ 
+    <!-- ================================
+         ABOUT
+    ================================ -->
+    <section class="about" id="about">
+      <div class="about__inner">
+        <div class="about__text">
+          <h2 class="section-title">Über mich</h2>
+          <p class="about__bio">
+            Ich lerne Webentwicklung seit einigen Monaten intensiv
+            und arbeite gerade an meinem ersten eigenen Portfolio.
+            Mein Fokus liegt auf sauberem HTML, modularem CSS
+            und einer klaren Nutzerführung.
+          </p>
+          <p class="about__bio">
+            Neben dem Code interessiere ich mich für Fußball und Podcasts über Technologie.
+          </p>
+        </div>
+        <div class="about__meta">
+          <dl class="meta-list">
+            <div class="meta-list__item">
+              <dt class="meta-list__label">Standort</dt>
+              <dd class="meta-list__value">Deutschland</dd>
+            </div>
+            <div class="meta-list__item">
+              <dt class="meta-list__label">Fokus</dt>
+              <dd class="meta-list__value">Frontend</dd>
+            </div>
+            <div class="meta-list__item">
+              <dt class="meta-list__label">Sprachen</dt>
+              <dd class="meta-list__value">HTML * CSS * JavaScript * React</dd>
+            </div>
+            <div class="meta-list__item">
+              <dt class="meta-list__label">Status</dt>
+              <dd class="meta-list__value meta-list__value--available">
+                Offen für Projekte
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ================================
+         SKILLS
+    ================================ -->
+    <section class="skills" id="skills">
+      <div class="skills__inner">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skill-grid" role="list">
+ 
+          <li class="skill-card">
+            <span class="skill-card__name">HTML5</span>
+            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
+            <p class="skill-card__note">Semantik, Barrierefreiheit, Formulare</p>
+          </li>
+ 
+          <li class="skill-card">
+            <span class="skill-card__name">CSS3</span>
+            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
+            <p class="skill-card__note">BEM, Flexbox, Grid, Custom Properties</p>
+          </li>
+ 
+          <li class="skill-card">
+            <span class="skill-card__name">JavaScript</span>
+            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
+            <p class="skill-card__note">ES6, DOM, Events, Asynchronität, Promises, Modules</p>
+          </li>
+ 
+          <li class="skill-card">
+            <span class="skill-card__name">Git & GitHub</span>
+            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
+            <p class="skill-card__note">Branches, Commits, Pull Requests</p>
+          </li>
+ 
+          <li class="skill-card">
+            <span class="skill-card__name">React</span>
+            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
+            <p class="skill-card__note">Components, Props, State, Lifecycle, Hooks, Context</p>
+          </li>
+ 
+          <li class="skill-card">
+            <span class="skill-card__name">Responsive Design</span>
+            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
+            <p class="skill-card__note">Mobile First, Media Queries, Viewport</p>
+          </li>
+ 
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- ================================
+         PROJECTS
+    ================================ -->
+    <section class="projects" id="projects">
+      <div class="projects__inner">
+        <h2 class="section-title">Projekte</h2>
+        <ul class="project-list" role="list">
+ 
+          <li class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Portfolio-Website</h3>
+              <ul class="project-card__tags" role="list">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+            </div>
+            <p class="project-card__desc">
+              Meine erste eigene Website — aufgebaut mit semantischem HTML
+              und modularem CSS nach BEM-Konvention. Responsiv und barrierefrei.
+            </p>
+            <a
+              class="project-card__link"
+              href="https://fostij.github.io/Anon/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Auf GitHub ansehen →
+            </a>
+          </li>
+ 
+          <li class="project-card">
+            <div class="project-card__header">
+              <h3 class="project-card__title">Nächstes Projekt</h3>
+              <ul class="project-card__tags" role="list">
+                <li class="tag">In Planung</li>
+              </ul>
+            </div>
+            <p class="project-card__desc">
+              Kommt bald — ich arbeite gerade an einer kleinen
+              JavaScript-Anwendung.
+            </p>
+          </li>
+ 
+        </ul>
+      </div>
+    </section>
+ 
+    <!-- ================================
+         CONTACT
+    ================================ -->
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <h2 class="section-title">Kontakt</h2>
+        <p class="contact__lead">
+          Du hast ein Projekt oder willst einfach Hallo sagen?
+          Schreib mir direkt.
+        </p>
+ 
+        <form
+          class="contact-form"
+          action="https://echo.free.beeceptor.com/contact-form"
+          method="POST"
+        >
+          <div class="form-field">
+            <label class="form-field__label" for="name">Name *</label>
+            <input
+              class="form-field__input"
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            />
+          </div>
+ 
+          <div class="form-field">
+            <label class="form-field__label" for="email">E-Mail *</label>
+            <input
+              class="form-field__input"
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            />
+          </div>
+ 
+          <div class="form-field">
+            <label class="form-field__label" for="message">Nachricht *</label>
+            <textarea
+              class="form-field__input form-field__input--textarea"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Hallo Freund, ..."
+              required
+            ></textarea>
+          </div>
+ 
+          <button class="btn btn--primary" type="submit">
+            Nachricht senden
+          </button>
+        </form>
+      </div>
+    </section>
+ 
+  </main>
+ 
+  <!-- ================================
+       FOOTER
+  ================================ -->
+  <footer class="footer">
+    <p class="footer__copy">&copy; 2026 Oleg Fostii</p>
+    <ul class="footer__links" role="list">
+      <li>
+        <a
+          class="footer__link"
+          href="https://github.com/fostij"
+          target="_blank"
+          rel="noopener noreferrer"
+        >GitHub</a>
+      </li>
+    </ul>
+  </footer>
+ 
+</body>
+</html>
 </body>
 </html>
