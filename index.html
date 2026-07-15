@@ -4,260 +4,250 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oleg Fostii — Web Developer</title>
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
- 
-  <!-- ================================
+
+  <!-- ================================================
        NAVIGATION
-  ================================ -->
+  ================================================ -->
   <header>
-    <nav class="nav">
-        <div class="nav__logo">OF.</div>
-            <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#about">Über mich</a></li>
-                <li class="nav__item"><a class="nav__link" href="#skills">Skills</a></li>
-                <li class="nav__item"><a class="nav__link" href="#projects">Projekte</a></li>
-                <li class="nav__item"><a class="nav__link" href="#contact">Kontakt</a></li>
-            </ul>
+    <h1>Oleg Fostii</h1>
+    <p>Web Developer in Weiterbildung</p>
+
+    <nav>
+      <ul>
+        <li><a href="#über-mich">Über mich</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projekte">Projekte</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
     </nav>
   </header>
- 
+
   <main>
- 
-    <!-- ================================
-         HERO
-    ================================ -->
-    <section class="hero" id="hero">
-      <div class="hero__content">
-        <span class="hero__eyebrow">Hallo, ich bin</span>
-        <h1 class="hero__title">Oleg Fostii</h1>
-        <p class="hero__subtitle">
-          Web Developer in Weiterbildung —<br />
-          ich baue saubere, zugängliche Websites.
-        </p>
-        <a class="btn btn--primary" href="https://fostij.github.io/Portfolio.github.io/">Projekte ansehen</a>
-      </div>
-      <div class="hero__accent" aria-hidden="true"></div>
+
+    <!-- ================================================
+         ABSCHNITT: ÜBER MICH
+    ================================================ -->
+    <section id="über-mich">
+      <h2>Über mich</h2>
+
+      <figure>
+        <img
+          src="/bilder/profil.jpeg"
+          alt="Foto von Oleg Fostii, Web Developer"
+          width="200"
+        />
+        <figcaption>Oleg Fostii, Web Developer</figcaption>
+      </figure>
+
+      <p>
+        Ich lerne Webentwicklung seit einigen Jahren intensiv und arbeite
+        gerade an meinem ersten eigenen Portfolio. Mein Fokus liegt auf
+        sauberem, semantischem HTML und gut strukturiertem CSS.
+      </p>
+
+      <p>
+        Neben dem Code interessiere ich mich für Fußball, Wandern
+        und Podcasts über Technologie und Künstliche Intelligenz.
+      </p>
+
+      <h3>Meine Interessen</h3>
+      <ul>
+        <li>Webentwicklung &amp; Open Source</li>
+        <li>Python und FastAPI</li>
+        <li>Deep Learning und Machine Learning</li>
+        <li>Wandern</li>
+        <li>Podcasts über Technologie und Künstliche Intelligenz</li>
+        <li>Fussball</li>
+      </ul>
     </section>
- 
-    <!-- ================================
-         ABOUT
-    ================================ -->
-    <section class="about" id="about">
-      <div class="about__inner">
-        <div class="about__text">
-          <h2 class="section-title">Über mich</h2>
-          <p class="about__bio">
-            Ich lerne Webentwicklung seit einigen Monaten intensiv
-            und arbeite gerade an meinem ersten eigenen Portfolio.
-            Mein Fokus liegt auf sauberem HTML, modularem CSS
-            und einer klaren Nutzerführung.
-          </p>
-          <p class="about__bio">
-            Neben dem Code interessiere ich mich für Fußball und Podcasts über Technologie.
-          </p>
-        </div>
-        <div class="about__meta">
-          <dl class="meta-list">
-            <div class="meta-list__item">
-              <dt class="meta-list__label">Standort</dt>
-              <dd class="meta-list__value">Deutschland</dd>
-            </div>
-            <div class="meta-list__item">
-              <dt class="meta-list__label">Fokus</dt>
-              <dd class="meta-list__value">Frontend</dd>
-            </div>
-            <div class="meta-list__item">
-              <dt class="meta-list__label">Sprachen</dt>
-              <dd class="meta-list__value">HTML * CSS * JavaScript * React</dd>
-            </div>
-            <div class="meta-list__item">
-              <dt class="meta-list__label">Status</dt>
-              <dd class="meta-list__value meta-list__value--available">
-                Offen für Projekte
-              </dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
- 
-    <!-- ================================
-         SKILLS
-    ================================ -->
-    <section class="skills" id="skills">
-      <div class="skills__inner">
-        <h2 class="section-title">Skills</h2>
-        <ul class="skill-grid" role="list">
- 
-          <li class="skill-card">
-            <span class="skill-card__name">HTML5</span>
-            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
-            <p class="skill-card__note">Semantik, Barrierefreiheit, Formulare</p>
-          </li>
- 
-          <li class="skill-card">
-            <span class="skill-card__name">CSS3</span>
-            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
-            <p class="skill-card__note">BEM, Flexbox, Grid, Custom Properties</p>
-          </li>
- 
-          <li class="skill-card">
-            <span class="skill-card__name">JavaScript</span>
-            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
-            <p class="skill-card__note">ES6, DOM, Events, Asynchronität, Promises, Modules</p>
-          </li>
- 
-          <li class="skill-card">
-            <span class="skill-card__name">Git & GitHub</span>
-            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
-            <p class="skill-card__note">Branches, Commits, Pull Requests</p>
-          </li>
- 
-          <li class="skill-card">
-            <span class="skill-card__name">React</span>
-            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
-            <p class="skill-card__note">Components, Props, State, Lifecycle, Hooks, Context</p>
-          </li>
- 
-          <li class="skill-card">
-            <span class="skill-card__name">Responsive Design</span>
-            <span class="skill-card__level skill-card__level--high">Fortgeschritten</span>
-            <p class="skill-card__note">Mobile First, Media Queries, Viewport</p>
-          </li>
- 
-        </ul>
-      </div>
-    </section>
- 
-    <!-- ================================
-         PROJECTS
-    ================================ -->
-    <section class="projects" id="projects">
-      <div class="projects__inner">
-        <h2 class="section-title">Projekte</h2>
-        <ul class="project-list" role="list">
- 
-          <li class="project-card">
-            <div class="project-card__header">
-              <h3 class="project-card__title">Portfolio-Website</h3>
-              <ul class="project-card__tags" role="list">
-                <li class="tag">HTML</li>
-                <li class="tag">CSS</li>
-                <li class="tag">JavaScript</li>
-              </ul>
-            </div>
-            <p class="project-card__desc">
-              Meine erste eigene Website — aufgebaut mit semantischem HTML
-              und modularem CSS nach BEM-Konvention. Responsiv und barrierefrei.
-            </p>
-            <a
-              class="project-card__link"
-              href="https://fostij.github.io/Anon/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Auf GitHub ansehen →
-            </a>
-          </li>
- 
-          <li class="project-card">
-            <div class="project-card__header">
-              <h3 class="project-card__title">Nächstes Projekt</h3>
-              <ul class="project-card__tags" role="list">
-                <li class="tag">In Planung</li>
-              </ul>
-            </div>
-            <p class="project-card__desc">
-              Kommt bald — ich arbeite gerade an einer kleinen
-              JavaScript-Anwendung.
-            </p>
-          </li>
- 
-        </ul>
-      </div>
-    </section>
- 
-    <!-- ================================
-         CONTACT
-    ================================ -->
-    <section class="contact" id="contact">
-      <div class="contact__inner">
-        <h2 class="section-title">Kontakt</h2>
-        <p class="contact__lead">
-          Du hast ein Projekt oder willst einfach Hallo sagen?
-          Schreib mir direkt.
-        </p>
- 
-        <form
-          class="contact-form"
-          action="https://echo.free.beeceptor.com/contact-form"
-          method="POST"
-        >
-          <div class="form-field">
-            <label class="form-field__label" for="name">Name *</label>
-            <input
-              class="form-field__input"
-              type="text"
-              id="name"
-              name="name"
-              autocomplete="name"
-              required
-            />
-          </div>
- 
-          <div class="form-field">
-            <label class="form-field__label" for="email">E-Mail *</label>
-            <input
-              class="form-field__input"
-              type="email"
-              id="email"
-              name="email"
-              autocomplete="email"
-              required
-            />
-          </div>
- 
-          <div class="form-field">
-            <label class="form-field__label" for="message">Nachricht *</label>
-            <textarea
-              class="form-field__input form-field__input--textarea"
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Hallo Freund, ..."
-              required
-            ></textarea>
-          </div>
- 
-          <button class="btn btn--primary" type="submit">
-            Nachricht senden
-          </button>
-        </form>
-      </div>
-    </section>
- 
-  </main>
- 
-  <!-- ================================
-       FOOTER
-  ================================ -->
-  <footer class="footer">
-    <p class="footer__copy">&copy; 2026 Oleg Fostii</p>
-    <ul class="footer__links" role="list">
-      <li>
+
+    <!-- ================================================
+         ABSCHNITT: SKILLS
+    ================================================ -->
+    <section id="skills">
+      <h2>Skills-Übersicht</h2>
+
+      <table border="1">
+        <thead>
+          <tr>
+            <th scope="col">Technologie</th>
+            <th scope="col">Kenntnisstand</th>
+            <th scope="col">Schwerpunkte</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">HTML5</th>
+            <td>Fortgeschritten</td>
+            <td>Semantik, Formulare, Barrierefreiheit</td>
+          </tr>
+          <tr>
+            <th scope="row">CSS3</th>
+            <td>Fortgeschritten</td>
+            <td>BEM, Flexbox, Grid, Custom Properties</td>
+          </tr>
+          <tr>
+            <th scope="row">JavaScript</th>
+            <td>Fortgeschritten</td>
+            <td>ES6+, DOM, Events, Asynchrone Programmierung, Promises</td>
+          </tr>
+          <tr>
+            <th scope="row">Git &amp; GitHub</th>
+            <td>Fortgeschritten</td>
+            <td>Branches, Commits, Pull Requests</td>
+          </tr>
+          <tr>
+            <th scope="row">React</th>
+            <td>Fortgeschritten</td>
+            <td>Components, Props, State, Lifecycle, Hooks, Context</td>
+          </tr>
+          <tr>
+            <th scope="row">Responsive Design</th>
+            <td>Fortgeschritten</td>
+            <td>Mobile First, Media Queries, Viewport</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        Mehr über diese Technologien findest du auf
         <a
-          class="footer__link"
-          href="https://github.com/fostij"
+          href="https://www.w3schools.com/html/"
           target="_blank"
           rel="noopener noreferrer"
-        >GitHub</a>
-      </li>
-    </ul>
+        >W3Schools</a>.
+      </p>
+    </section>
+
+    <!-- ================================================
+         ABSCHNITT: PROJEKTE
+    ================================================ -->
+    <section id="projekte">
+      <h2>Meine Projekte</h2>
+
+      <article>
+        <h3>Portfolio-Website</h3>
+        <p>
+          Meine erste eigene Website — aufgebaut mit semantischem HTML5
+          ohne CSS-Frameworks. Responsiv und barrierefrei konzipiert.
+        </p>
+        <p>Technologien: HTML5, CSS3, JavaScript</p>
+        <p>
+          <a
+            href="https://fostij.github.io/Portfolio.github.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Projekt auf GitHub ansehen
+          </a>
+        </p>
+      </article>
+
+      <article>
+        <h3>Nächstes Projekt (in Planung)</h3>
+        <p>Ich plane eine kleine JavaScript-Anwendung.</p>
+      </article>
+    </section>
+
+    <!-- ================================================
+         ABSCHNITT: KONTAKTFORMULAR
+    ================================================ -->
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+
+      <p>
+        Du hast ein Projekt oder willst einfach Hallo sagen? Schreib mir
+        direkt über das Formular oder per E-Mail:
+        <a href="mailto:olegfostij@gmail.com">olegfostij@gmail.com</a>.
+      </p>
+
+      <form
+        class="contact-form"
+        action="https://echo.free.beeceptor.com/contact-form"
+        method="POST">
+
+        <div>
+          <label for="name">Name *</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">E-Mail *</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="telefon">Telefon</label>
+          <input
+            type="tel"
+            id="telefon"
+            name="telefon"
+            placeholder="+49 123 456789"
+            pattern="^\+49\s\d{3}\s\d{6,}$"
+            title="Bitte gib eine gültige Telefonnummer im Format +49 123 456789 ein"
+            autocomplete="tel"
+          />
+        </div>
+
+        <div>
+          <label for="betreff">Betreff *</label>
+          <input
+            type="text"
+            id="betreff"
+            name="betreff"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="nachricht">Nachricht *</label>
+          <textarea
+            id="nachricht"
+            name="nachricht"
+            rows="6"
+            placeholder="Hallo ..."
+            required
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="quelle">Wie hast du mich gefunden?</label>
+          <select id="quelle" name="quelle">
+            <option value="">— bitte wählen —</option>
+            <option value="github">GitHub</option>
+            <option value="linkedin">LinkedIn</option>
+            <option value="empfehlung">Empfehlung</option>
+            <option value="sonstiges">Sonstiges</option>
+          </select>
+        </div>
+
+        <button type="submit">Nachricht absenden</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer>
+    <p>&copy; 2026 Oleg Fostii</p>
   </footer>
- 
-</body>
-</html>
+
 </body>
 </html>
