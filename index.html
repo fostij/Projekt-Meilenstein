@@ -3,118 +3,160 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
   <title>Oleg Fostii — Web Developer</title>
 </head>
 <body>
-
   <!-- ================================================
-       NAVIGATION
-  ================================================ -->
-  <header>
-    <h1>Oleg Fostii</h1>
-    <p>Web Developer in Weiterbildung</p>
+      Header
+    ================================================ -->
+  <header class="header">
 
-    <nav>
-      <ul>
-        <li><a href="#über-mich">Über mich</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projekte">Projekte</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
+    <!-- Logo -->
+    <div class="header__logo">
+      <h1 class="header__title">Oleg Fostii</h1>
+      <p class="header__subtitle">Web Developer</p>
+    </div>
+
+    <!-- Burger Toggle -->
+    <input type="checkbox" id="burger-toggle" />
+
+    <!-- Burger Button -->
+    <label for="burger-toggle" class="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </label>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#ueber-mich" class="nav__link nav__link--active">Über mich</a></li>
+        <li class="nav__item"><a href="#interessen" class="nav__link nav__link--active">Interessen</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__link nav__link--active">Skills</a></li>
+        <li class="nav__item"><a href="#projekte" class="nav__link nav__link--active">Projekte</a></li>
+        <li class="nav__item"><a href="#kontaktformular" class="nav__link nav__link--active">Kontakt</a></li>
       </ul>
     </nav>
-  </header>
 
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+  </header>
+  
   <main>
 
-    <!-- ================================================
-         ABSCHNITT: ÜBER MICH
-    ================================================ -->
-    <section id="über-mich">
-      <h2>Über mich</h2>
+    <!-- ================================
+      HERO Section
+      ================================ -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Über mich</h1>
 
-      <figure>
+        <a href="#ueber-mich" class="hero__button">
+          <span class="hero__button-icon">&#10140</span>
+          <span class="hero__button-text">Mehr erfahren</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================================================
+        ÜBER MICH Section
+    ================================================ -->
+    <section id="ueber-mich" class="about">
+      <h2 class="about__title">Über mich</h2>
+
+      <figure class="about__figure">
         <img
-          src="/bilder/profil.jpeg"
+          class="about__image"
+          src="bilder/profil.jpeg"
           alt="Foto von Oleg Fostii, Web Developer"
-          width="200"
-          style="border-radius: 50%; display: block;"
         />
-        <figcaption>Oleg Fostii, Web Developer</figcaption>
+        <figcaption class="about_caption">Oleg Fostii, Web Developer</figcaption>
       </figure>
 
-      <p>
+      <p class="about__text">
         Ich lerne Webentwicklung seit einigen Jahren intensiv und arbeite
         gerade an meinem ersten eigenen Portfolio. Mein Fokus liegt auf
         sauberem, semantischem HTML und gut strukturiertem CSS.
       </p>
 
-      <p>
+      <p class="about__text">
         Neben dem Code interessiere ich mich für Fußball, Wandern
         und Podcasts über Technologie und Künstliche Intelligenz.
       </p>
 
-      <h3>Meine Interessen</h3>
-      <ul>
-        <li>Webentwicklung &amp; Open Source</li>
-        <li>Python und FastAPI</li>
-        <li>Deep Learning und Machine Learning</li>
-        <li>Wandern</li>
-        <li>Podcasts über Technologie und Künstliche Intelligenz</li>
-        <li>Fussball</li>
+    </section>
+
+    <!-- ================================================
+        INTERESSEN Section
+    ================================================ -->
+    <section id="interessen" class="interests">
+      <h3 class="interests__title">Meine Interessen</h3>
+      <ul class="interests__list">
+        <li class="interests__item">Webentwicklung &amp; Open Source</li>
+        <li class="interests__item">Python und FastAPI</li>
+        <li class="interests__item">Deep Learning und Machine Learning</li>
+        <li class="interests__item">Wandern</li>
+        <li class="interests__item">Podcasts über Technologie und Künstliche Intelligenz</li>
+        <li class="interests__item">Fussball</li>
       </ul>
     </section>
 
     <!-- ================================================
-         ABSCHNITT: SKILLS
+        SKILLS Section
     ================================================ -->
-    <section id="skills">
-      <h2>Skills-Übersicht</h2>
+    <section id="skills" class="skills">
+      <h2 class="skills__title">Skills-Übersicht</h2>
 
-      <table border="1">
-        <thead>
-          <tr>
-            <th scope="col">Technologie</th>
-            <th scope="col">Kenntnisstand</th>
-            <th scope="col">Schwerpunkte</th>
+      <table class="skills__table">
+        <thead class="skills__thead">
+          <tr class="skills__row">
+            <th class="skills__head" scope="col">Technologie</th>
+            <th class="skills__head" scope="col">Kenntnisstand</th>
+            <th class="skills__head" scope="col">Schwerpunkte</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <th scope="row">HTML5</th>
-            <td>Fortgeschritten</td>
-            <td>Semantik, Formulare, Barrierefreiheit</td>
+
+        <tbody class="skills__tbody">
+          <tr class="skills__row">
+            <th class="skills__head" scope="row">HTML5</th>
+            <td class="skills__cell">Fortgeschritten</td>
+            <td class="skills__cell">Semantik, Formulare, Barrierefreiheit</td>
           </tr>
-          <tr>
-            <th scope="row">CSS3</th>
-            <td>Fortgeschritten</td>
-            <td>BEM, Flexbox, Grid, Custom Properties</td>
+          <tr class="skills__row">
+            <th class="skills__head" scope="row">CSS3</th>
+            <td class="skills__cell">Fortgeschritten</td>
+            <td class="skills__cell">BEM, Flexbox, Grid, Custom Properties</td>
           </tr>
-          <tr>
-            <th scope="row">JavaScript</th>
-            <td>Fortgeschritten</td>
-            <td>ES6+, DOM, Events, Asynchrone Programmierung, Promises</td>
+          <tr class="skills__row">
+            <th class="skills__head" scope="row">JavaScript</th>
+            <td class="skills__cell">Fortgeschritten</td>
+            <td class="skills__cell">ES6+, DOM, Events, Asynchrone Programmierung, Promises</td>
           </tr>
-          <tr>
-            <th scope="row">Git &amp; GitHub</th>
-            <td>Fortgeschritten</td>
-            <td>Branches, Commits, Pull Requests</td>
+          <tr class="skills__row">
+            <th class="skills__head" scope="row">Git &amp; GitHub</th>
+            <td class="skills__cell">Fortgeschritten</td>
+            <td class="skills__cell">Branches, Commits, Pull Requests</td>
           </tr>
-          <tr>
-            <th scope="row">React</th>
-            <td>Fortgeschritten</td>
-            <td>Components, Props, State, Lifecycle, Hooks, Context</td>
+          <tr class="skills__row">
+            <th class="skills__head" scope="row">React</th>
+            <td class="skills__cell">Fortgeschritten</td>
+            <td class="skills__cell">Components, Props, State, Lifecycle, Hooks, Context</td>
           </tr>
-          <tr>
-            <th scope="row">Responsive Design</th>
-            <td>Fortgeschritten</td>
-            <td>Mobile First, Media Queries, Viewport</td>
+          <tr class="skills__row">
+            <th class="skills__head" scope="row">Responsive Design</th>
+            <td class="skills__cell">Fortgeschritten</td>
+            <td class="skills__cell">Mobile First, Media Queries, Viewport</td>
           </tr>
         </tbody>
       </table>
 
-      <p>
+      <p class="skills__note">
         Mehr über diese Technologien findest du auf
         <a
+          class="skills__link"
           href="https://www.w3schools.com/html/"
           target="_blank"
           rel="noopener noreferrer"
@@ -123,45 +165,43 @@
     </section>
 
     <!-- ================================================
-         ABSCHNITT: PROJEKTE
+         PROJEKTE Section
     ================================================ -->
-    <section id="projekte">
-      <h2>Meine Projekte</h2>
+    <section id="projekte" class="projects">
+      <h2 class="projects__title">Meine Projekte</h2>
 
-      <article>
-        <h3>Portfolio-Website</h3>
-        <p>
+      <article class="projects__item">
+        <h3 class="projects__item-title">Portfolio-Website</h3>
+        <p class="projects__item-text">
           Meine erste eigene Website — aufgebaut mit semantischem HTML5
           ohne CSS-Frameworks. Responsiv und barrierefrei konzipiert.
+          Technologien: HTML5, CSS3, JavaScript
         </p>
-        <p>Technologien: HTML5, CSS3, JavaScript</p>
-        <p>
-          <a
+        <a
+            class="projects__item-link"
             href="https://fostij.github.io/Portfolio.github.io/"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            Projekt auf GitHub ansehen
-          </a>
-        </p>
+            rel="noopener noreferrer">Projekt auf GitHub ansehen</a>
       </article>
 
-      <article>
-        <h3>Nächstes Projekt (in Planung)</h3>
-        <p>Ich plane eine kleine JavaScript-Anwendung.</p>
+      <article class="projects__item">
+        <h3 class="projects__item-title">Nächstes Projekt (in Planung)</h3>
+        <p class="projects__item-text">
+          Ich plane eine kleine JavaScript-Anwendung.
+        </p>
       </article>
     </section>
 
     <!-- ================================================
-         ABSCHNITT: KONTAKTFORMULAR
+         KONTAKTFORMULAR Section
     ================================================ -->
-    <section id="kontakt">
-      <h2>Kontakt</h2>
+    <section id="kontaktformular" class="contact">
+      <h2 class="contact__title">Kontakt</h2>
 
-      <p>
+      <p class="contact__intro">
         Du hast ein Projekt oder willst einfach Hallo sagen? Schreib mir
         direkt über das Formular oder per E-Mail:
-        <a href="mailto:olegfostij@gmail.com">olegfostij@gmail.com</a>.
+        <a class="contact__email" href="mailto:olegfostij@gmail.com">olegfostij@gmail.com</a>.
       </p>
 
       <form
@@ -169,9 +209,10 @@
         action="https://echo.free.beeceptor.com/contact-form"
         method="POST">
 
-        <div>
-          <label for="name">Name *</label>
+        <div class="contact__field">
+          <label class="contact__label" for="name">Name *</label>
           <input
+            class="contact__input"
             type="text"
             id="name"
             name="name"
@@ -180,9 +221,10 @@
           />
         </div>
 
-        <div>
-          <label for="email">E-Mail *</label>
+        <div class="contact__field">
+          <label class="contact__label" for="email">E-Mail *</label>
           <input
+            class="contact__input"
             type="email"
             id="email"
             name="email"
@@ -191,9 +233,10 @@
           />
         </div>
 
-        <div>
-          <label for="telefon">Telefon</label>
+        <div class="contact__field">
+          <label class="contact__label" for="telefon">Telefon</label>
           <input
+            class="contact__input"
             type="tel"
             id="telefon"
             name="telefon"
@@ -204,9 +247,10 @@
           />
         </div>
 
-        <div>
-          <label for="betreff">Betreff *</label>
+        <div class="contact__field">
+          <label class="contact__label" for="betreff">Betreff *</label>
           <input
+            class="contact__input"
             type="text"
             id="betreff"
             name="betreff"
@@ -214,9 +258,10 @@
           />
         </div>
 
-        <div>
-          <label for="nachricht">Nachricht *</label>
+        <div class="contact__field">
+          <label class="contact__label" for="nachricht">Nachricht *</label>
           <textarea
+            class="contact__textarea"
             id="nachricht"
             name="nachricht"
             rows="6"
@@ -225,9 +270,9 @@
           ></textarea>
         </div>
 
-        <div>
-          <label for="quelle">Wie hast du mich gefunden?</label>
-          <select id="quelle" name="quelle">
+        <div class="contact__field">
+          <label class="contact__label" for="quelle">Wie hast du mich gefunden?</label>
+          <select class="contact__select" id="quelle" name="quelle">
             <option value="">— bitte wählen —</option>
             <option value="github">GitHub</option>
             <option value="linkedin">LinkedIn</option>
@@ -236,8 +281,7 @@
           </select>
         </div>
 
-        <button type="submit">Nachricht absenden</button>
-
+        <button class="contact__submit" type="submit">Nachricht absenden</button>
       </form>
     </section>
 
@@ -246,8 +290,8 @@
   <!-- ================================================
        FOOTER
   ================================================ -->
-  <footer>
-    <p>&copy; 2026 Oleg Fostii</p>
+  <footer class="footer">
+    <p class="footer__text">&copy; 2026 Oleg Fostii</p>
   </footer>
 
 </body>

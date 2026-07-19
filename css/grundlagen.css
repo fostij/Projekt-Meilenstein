@@ -1,0 +1,35 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #1a1a2e;
+    font-size: 2.5rem;
+}
+
+p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.wichtig {
+    color: steelblue;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+    margin-right: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
